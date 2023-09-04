@@ -1,343 +1,398 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=dedge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO -->
+    <title>Eunjae&#39;s Portfolio</title>
+    <meta name="description" content="Portfolio for software engineer Eunjae" />
+    <meta name="author" content="Eunjae" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <!-- (OG) Open Graph Data -->
+    <meta property="og:title" content="은재의 포트폴리오" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="배포후 생성된 URL" />
+    <meta property="og:image" content="배포후에 생성된 이미지 URL" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Open+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/365858d686.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Javascript -->
+    <script type="module" src="src/main.js" defer></script>
+    <script type="module" src="src/projects.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=dedge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- SEO -->
-  <title>Eunjae&#39;s Portfolio</title>
-  <meta name="description" content="Portfolio for software engineer Eunjae" />
-  <meta name="author" content="Eunjae" />
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-  <!-- (OG) Open Graph Data -->
-  <meta property="og:title" content="은재의 포트폴리오" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="배포후 생성된 URL" />
-  <meta property="og:image" content="배포후에 생성된 이미지 URL" />
-  <!-- Google Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Open+Sans:wght@300;400;500;600&display=swap"
-    rel="stylesheet" />
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/365858d686.js" crossorigin="anonymous"></script>
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/style.css" />
-  <!-- Javascript -->
-  <script type="module" src="src/main.js" defer></script>
-  <script type="module" src="src/projects.js" defer></script>
-</head>
-
-<body>
-  <!-- Header -->
-  <header class="header">
-    <div class="header__logo">
-      <img class="header__logo__img" src="images/favicon.ico" alt="logo" />
-      <h1 class="header__logo__title"><a href="#">Eunjae</a></h1>
-    </div>
-    <nav class="header__nav">
-      <ul class="header__menu">
-        <li><a class="header__menu__item active" href="#home">Home</a></li>
-        <li><a class="header__menu__item" href="#about">About</a></li>
-        <li><a class="header__menu__item" href="#skills">Skills</a></li>
-        <li><a class="header__menu__item" href="#work">My work</a></li>
-        <li>
-          <a class="header__menu__item" href="#testimonial">Testimonial</a>
-        </li>
-        <li><a class="header__menu__item" href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <button class="header__toggle" aria-label="navigation menu toggle">
-      <i class="fa-solid fa-bars"></i></button>
-  </header>
-  <!-- Main -->
-  <main>
-    <!-- Home -->
-    <section id="home">
-      <div class="home__container">
-        <img class="home__avatar" src="images/profile.png" alt="Eunjae's profile" />
-        <h2 class="home__title">
-          Hello <br />I&#39;m
-          <strong class="home__title--strong">Programmer</strong>, Eunjae
-        </h2>
-        <p class="home__description">
-          A software engineer currently residing in Seoul, South Korea
-        </p>
-        <a class="home__contact" href="#contact">Contact Me</a>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__logo">
+        <img class="header__logo__img" src="images/favicon.ico" alt="logo" />
+        <h1 class="header__logo__title"><a href="#">Eunjae</a></h1>
       </div>
-    </section>
-    <!-- About -->
-    <section id="about" class="section max-container">
-      <h2 class="title">About me</h2>
-      <p class="description">
-        안녕하세요 여러분~? 저는 은재랍니다^^ 나이는 비밀이구요 키는 170이에요
-        ㅎㅎㅎ 몸무게는 47이랍니다! 말라죽을거같다구요?? 걱정마세요 저는 아주
-        건강하답니다~~stories about my life as developer
-      </p>
-      <ul class="majors">
-        <li class="major">
-          <i class="fa-brands fa-html5 major__icon"></i>
-          <p class="major__title">Front-end</p>
-          <p>HTML, CSS, JavaScript, React, Web APIs</p>
-        </li>
-        <li class="major">
-          <i class="fa-brands fa-aws major__icon"></i>
-          <p class="major__title">Cloud</p>
-          <p>AWS</p>
-        </li>
-        <li class="major">
-          <i class="fa-solid fa-server major__icon"></i>
-          <p class="major__title">Back-end</p>
-          <p>JavaScript, NodeJs, Rest APIs</p>
-        </li>
-      </ul>
-      <ul class="jobs">
-        <li class="job">
-          <img src="images/jobs/google.png" alt="google logo" />
-          <div>
-            <p class="job__name">Studying for being Software Engineer</p>
-            <p class="job__period">2022 Mar - Until now</p>
-          </div>
-        </li>
-        <li class="job">
-          <img src="images/jobs/samsung.png" alt="samsung logo" />
-          <div>
-            <p class="job__name">Seoul Woman's University</p>
-            <p class="job__period">2017 Mar - 2022 Feb</p>
-          </div>
-        </li>
-      </ul>
-    </section>
-    <!-- Skills -->
-    <section id="skills" class="section">
-      <div class="max-container">
-        <h2 class="title">My Skills</h2>
-        <p class="description">Skills & Attributes</p>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi unde
-          atque quo sequi, odit exercitationem quos nostrum doloribus
-          repellendus aliquam libero minus. Tenetur saepe voluptatibus totam
-          architecto et! Vel, dolor.(나의 강점)
-        </p>
-        <div class="skills">
-          <section class="skills__coding">
-            <h3 class="skills_title">Coding Skills</h3>
-            <ul>
-              <li class="bar">
-                <div class="bar__metadata">
-                  <span>HTML</span><span>98%</span>
-                </div>
-                <div class="bar__bg">
-                  <div class="bar__value" style="width: 98%"></div>
-                </div>
-              </li>
-              <li class="bar">
-                <div class="bar__metadata">
-                  <span>JavaScript</span><span>90%</span>
-                </div>
-                <div class="bar__bg">
-                  <div class="bar__value" style="width: 90%"></div>
-                </div>
-              </li>
-              <li class="bar">
-                <div class="bar__metadata">
-                  <span>CSS</span><span>85%</span>
-                </div>
-                <div class="bar__bg">
-                  <div class="bar__value" style="width: 85%"></div>
-                </div>
-              </li>
-              <li class="bar">
-                <div class="bar__metadata">
-                  <span>React</span><span>85%</span>
-                </div>
-                <div class="bar__bg">
-                  <div class="bar__value" style="width: 85%"></div>
-                </div>
-              </li>
-              <li class="bar">
-                <div class="bar__metadata">
-                  <span>NodeJs</span><span>80%</span>
-                </div>
-                <div class="bar__bg">
-                  <div class="bar__value" style="width: 80%"></div>
-                </div>
-              </li>
-              <li class="bar">
-                <div class="bar__metadata">
-                  <span>TypeScript</span><span>68%</span>
-                </div>
-                <div class="bar__bg">
-                  <div class="bar__value" style="width: 68%"></div>
-                </div>
-              </li>
-            </ul>
-          </section>
-          <section class="skills__tools">
-            <h3 class="skills_title">Tools</h3>
-            <ul>
-              <li>Visual Studio Code</li>
-            </ul>
-          </section>
-          <section class="skills__etc">
-            <h3 class="skills_title">Etc</h3>
-            <ul>
-              <li>Git</li>
-              <li>Scrum Master</li>
-              <li>English</li>
-            </ul>
-          </section>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li><a class="header__menu__item active" href="#home">Home</a></li>
+          <li><a class="header__menu__item" href="#about">About</a></li>
+          <li><a class="header__menu__item" href="#skills">Skills</a></li>
+          <li><a class="header__menu__item" href="#work">My work</a></li>
+          <li>
+            <a class="header__menu__item" href="#testimonial">Testimonial</a>
+          </li>
+          <li><a class="header__menu__item" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="header__toggle" aria-label="navigation menu toggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </header>
+    <!-- Main -->
+    <main>
+      <!-- Home -->
+      <section id="home">
+        <div class="home__container">
+          <img
+            class="home__avatar"
+            src="images/profile.png"
+            alt="Eunjae's profile"
+          />
+          <h2 class="home__title">
+            Hello <br />I&#39;m
+            <strong class="home__title--strong">Programmer</strong>, Eunjae
+          </h2>
+          <p class="home__description">
+            A software engineer currently residing in Seoul, South Korea
+          </p>
+          <a class="home__contact" href="#contact">Contact Me</a>
         </div>
-      </div>
-    </section>
-    <!-- Work -->
-    <section id="work" class="section">
+      </section>
+      <!-- About -->
+      <section id="about" class="section max-container">
+        <h2 class="title">About me</h2>
+        <p class="description">
+          안녕하세요 여러분~? 저는 은재랍니다^^ 나이는 비밀이구요 키는 170이에요
+          ㅎㅎㅎ 몸무게는 47이랍니다! 말라죽을거같다구요?? 걱정마세요 저는 아주
+          건강하답니다~~stories about my life as developer
+        </p>
+        <ul class="majors">
+          <li class="major">
+            <i class="fa-brands fa-html5 major__icon"></i>
+            <p class="major__title">Front-end</p>
+            <p>HTML, CSS, JavaScript, React, Web APIs</p>
+          </li>
+          <li class="major">
+            <i class="fa-brands fa-aws major__icon"></i>
+            <p class="major__title">Cloud</p>
+            <p>AWS</p>
+          </li>
+          <li class="major">
+            <i class="fa-solid fa-server major__icon"></i>
+            <p class="major__title">Back-end</p>
+            <p>JavaScript, NodeJs, Rest APIs</p>
+          </li>
+        </ul>
+        <ul class="jobs">
+          <li class="job">
+            <img src="images/jobs/google.png" alt="google logo" />
+            <div>
+              <p class="job__name">Studying for being Software Engineer</p>
+              <p class="job__period">2022 Mar - Until now</p>
+            </div>
+          </li>
+          <li class="job">
+            <img src="images/jobs/samsung.png" alt="samsung logo" />
+            <div>
+              <p class="job__name">Seoul Woman's University</p>
+              <p class="job__period">2017 Mar - 2022 Feb</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- Skills -->
+      <section id="skills" class="section">
+        <div class="max-container">
+          <h2 class="title">My Skills</h2>
+          <p class="description">Skills & Attributes</p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi unde
+            atque quo sequi, odit exercitationem quos nostrum doloribus
+            repellendus aliquam libero minus. Tenetur saepe voluptatibus totam
+            architecto et! Vel, dolor.(나의 강점)
+          </p>
+          <div class="skills">
+            <section class="skills__coding">
+              <h3 class="skills_title">Coding Skills</h3>
+              <ul>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>HTML</span><span>98%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 98%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>JavaScript</span><span>90%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 90%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>CSS</span><span>85%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 85%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>React</span><span>85%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 85%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>NodeJs</span><span>80%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 80%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>TypeScript</span><span>68%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 68%"></div>
+                  </div>
+                </li>
+              </ul>
+            </section>
+            <section class="skills__tools">
+              <h3 class="skills_title">Tools</h3>
+              <ul>
+                <li>Visual Studio Code</li>
+              </ul>
+            </section>
+            <section class="skills__etc">
+              <h3 class="skills_title">Etc</h3>
+              <ul>
+                <li>Git</li>
+                <li>Scrum Master</li>
+                <li>English</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </section>
+      <!-- Work -->
+      <section id="work" class="section">
+        <div class="max-container">
+          <h2 class="title">My work</h2>
+          <p class="description">Projects</p>
+          <ul class="categories">
+            <li>
+              <button class="category category--selected" data-category="all">
+                All <span class="category__count">5</span>
+              </button>
+            </li>
+            <li>
+              <button class="category" data-category="front-end">
+                Front-end <span class="category__count">3</span>
+              </button>
+            </li>
+            <li>
+              <button class="category" data-category="back-end">
+                Back-end <span class="category__count">2</span>
+              </button>
+            </li>
+          </ul>
+          <ul class="projects">
+            <li class="project" data-type="front-end">
+              <a href="#" target="_blank">
+                <img
+                  src="images/projects/project1.webp"
+                  alt="project1"
+                  class="project__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #1</h3>
+                  <p>Clone Coding with HTML, CSS, JavaScript</p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="front-end">
+              <a href="#" target="_blank"
+                ><img
+                  src="images/projects/project2.webp"
+                  alt="project2"
+                  class="project__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #2</h3>
+                  <p>Clone Coding with HTML, CSS, JavaScript</p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="front-end">
+              <a href="#" target="_blank"
+                ><img
+                  src="images/projects/project3.webp"
+                  alt="project3"
+                  class="project__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #3</h3>
+                  <p>Clone Coding with HTML, CSS, JavaScript</p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="back-end">
+              <a href="#" target="_blank"
+                ><img
+                  src="images/projects/project4.webp"
+                  alt="project4"
+                  class="project__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #4</h3>
+                  <p>Clone Coding with HTML, CSS, JavaScript</p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-category="back-end">
+              <a href="#" target="_blank"
+                ><img
+                  src="images/projects/project5.webp"
+                  alt="project5"
+                  class="project__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #5</h3>
+                  <p>Clone Coding with HTML, CSS, JavaScript</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Testimonial -->
+      <section id="testimonial" class="section max-container">
+        <h2 class="title">Testimonial</h2>
+        <p class="description">See what they say about me</p>
+        <ul class="testimonials">
+          <li class="testimonial">
+            <img
+              src="images/testimonials/people1.webp"
+              alt="people1"
+              class="testimonial__img"
+            />
+            <div class="testimonial__bubble">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Officia architecto a optio quae odit. Voluptate officiis ad amet
+                molestias ratione nam enim doloribus quam, eos expedita
+                consequuntur suscipit quo blanditiis.
+              </p>
+              <p>
+                <a href="#" class="testimonial__bubble__name">James Kim</a>
+                /Google
+              </p>
+            </div>
+          </li>
+          <li class="testimonial">
+            <img
+              src="images/testimonials/people2.webp"
+              alt="people2"
+              class="testimonial__img"
+            />
+            <div class="testimonial__bubble">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Officia architecto a optio quae odit. Voluptate officiis ad amet
+                molestias ratione nam enim doloribus quam, eos expedita
+                consequuntur suscipit quo blanditiis.
+              </p>
+              <p>
+                <a href="#" class="testimonial__bubble__name">Anna Jin</a>
+                /Samsung
+              </p>
+            </div>
+          </li>
+          <li class="testimonial">
+            <img
+              src="images/testimonials/people3.webp"
+              alt="people3"
+              class="testimonial__img"
+            />
+            <div class="testimonial__bubble">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Officia architecto a optio quae odit. Voluptate officiis ad amet
+                molestias ratione nam enim doloribus quam, eos expedita
+                consequuntur suscipit quo blanditiis.
+              </p>
+              <p>
+                <a href="#" class="testimonial__bubble__name"
+                  >Timothee Chalamet</a
+                >
+                /Google
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- Arrow up -->
+      <aside>
+        <a class="arrow-up" href="#home" title="back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </aside>
+    </main>
+    <!-- Footer -->
+    <footer id="contact" class="section">
       <div class="max-container">
-        <h2 class="title">My work</h2>
-        <p class="description">Projects</p>
-        <ul class="categories">
+        <h2 class="title">Let&#39;s talk</h2>
+        <p class="description">eun2763@naver.com</p>
+        <ul class="contact__links">
           <li>
-            <button class="category category--selected">
-              All <span class="category__count">5</span>
-            </button>
+            <a
+              class="contact__link"
+              href="https://github.com/CEJSH"
+              target="_blank"
+              title="my github link"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
           </li>
           <li>
-            <button class="category">
-              Front-end <span class="category__count">3</span>
-            </button>
-          </li>
-          <li>
-            <button class="category">
-              Back-end <span class="category__count">2</span>
-            </button>
-          </li>
-        </ul>
-        <ul class="projects">
-          <li class="project">
-            <a href="#" target="_blank">
-              <img src="images/projects/project1.webp" alt="project1" class="project__img" />
-              <div class="project__metadata">
-                <h3 class="project__title">Project #1</h3>
-                <p>Clone Coding with HTML, CSS, JavaScript</p>
-              </div>
-            </a>
-          </li>
-          <li class="project">
-            <a href="#" target="_blank"><img src="images/projects/project2.webp" alt="project2" class="project__img" />
-              <div class="project__metadata">
-                <h3 class="project__title">Project #2</h3>
-                <p>Clone Coding with HTML, CSS, JavaScript</p>
-              </div>
-            </a>
-          </li>
-          <li class="project">
-            <a href="#" target="_blank"><img src="images/projects/project3.webp" alt="project3" class="project__img" />
-              <div class="project__metadata">
-                <h3 class="project__title">Project #3</h3>
-                <p>Clone Coding with HTML, CSS, JavaScript</p>
-              </div>
-            </a>
-          </li>
-          <li class="project">
-            <a href="#" target="_blank"><img src="images/projects/project4.webp" alt="project4" class="project__img" />
-              <div class="project__metadata">
-                <h3 class="project__title">Project #4</h3>
-                <p>Clone Coding with HTML, CSS, JavaScript</p>
-              </div>
-            </a>
-          </li>
-          <li class="project">
-            <a href="#" target="_blank"><img src="images/projects/project5.webp" alt="project5" class="project__img" />
-              <div class="project__metadata">
-                <h3 class="project__title">Project #5</h3>
-                <p>Clone Coding with HTML, CSS, JavaScript</p>
-              </div>
+            <a
+              class="contact__link"
+              href="https://github.com/CEJSH"
+              target="_blank"
+              title="my github link"
+            >
+              <i class="fa-brands fa-linkedin"></i>
             </a>
           </li>
         </ul>
+        <p>©️Software Engineer Eunjae - All rights reserved</p>
       </div>
-    </section>
-    <!-- Testimonial -->
-    <section id="testimonial" class="section max-container">
-      <h2 class="title">Testimonial</h2>
-      <p class="description">See what they say about me</p>
-      <ul class="testimonials">
-        <li class="testimonial">
-          <img src="images/testimonials/people1.webp" alt="people1" class="testimonial__img" />
-          <div class="testimonial__bubble">
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Officia architecto a optio quae odit. Voluptate officiis ad amet
-              molestias ratione nam enim doloribus quam, eos expedita
-              consequuntur suscipit quo blanditiis.
-            </p>
-            <p>
-              <a href="#" class="testimonial__bubble__name">James Kim</a>
-              /Google
-            </p>
-          </div>
-        </li>
-        <li class="testimonial">
-          <img src="images/testimonials/people2.webp" alt="people2" class="testimonial__img" />
-          <div class="testimonial__bubble">
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Officia architecto a optio quae odit. Voluptate officiis ad amet
-              molestias ratione nam enim doloribus quam, eos expedita
-              consequuntur suscipit quo blanditiis.
-            </p>
-            <p>
-              <a href="#" class="testimonial__bubble__name">Anna Jin</a>
-              /Samsung
-            </p>
-          </div>
-        </li>
-        <li class="testimonial">
-          <img src="images/testimonials/people3.webp" alt="people3" class="testimonial__img" />
-          <div class="testimonial__bubble">
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Officia architecto a optio quae odit. Voluptate officiis ad amet
-              molestias ratione nam enim doloribus quam, eos expedita
-              consequuntur suscipit quo blanditiis.
-            </p>
-            <p>
-              <a href="#" class="testimonial__bubble__name">Timothee Chalamet</a>
-              /Google
-            </p>
-          </div>
-        </li>
-      </ul>
-    </section>
-    <!-- Arrow up -->
-    <aside>
-      <a class="arrow-up" href="#home" title="back to top">
-        <i class="fa-solid fa-arrow-up"> </i>
-      </a>
-    </aside>
-  </main>
-  <!-- Footer -->
-  <footer id="contact" class="section">
-    <div class="max-container">
-      <h2 class="title">Let&#39;s talk</h2>
-      <p class="description">eun2763@naver.com</p>
-      <ul class="contact__links">
-        <li>
-          <a class="contact__link" href="https://github.com/CEJSH" target="_blank" title="my github link">
-            <i class="fa-brands fa-github"></i>
-          </a>
-        </li>
-        <li>
-          <a class="contact__link" href="https://github.com/CEJSH" target="_blank" title="my github link">
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-        </li>
-      </ul>
-      <p>©️Software Engineer Eunjae - All rights reserved</p>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>

@@ -479,7 +479,7 @@ button {
 
 .fa-solid{
  color:white;
- opacity:0;
+ opacity:1;
 }
 
 @media screen and (max-width: 768px) {
