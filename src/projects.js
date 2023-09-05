@@ -9,12 +9,18 @@ categories.addEventListener('click', (event) => {
     if (filter == null) {
         return;
     }
-    // Active 메뉴를 재설정
+    handleActiveSelection(event.target);
+    filterProjects(filter); 
+});
+
+
+function handleActiveSelection(target) {
     const active = document.querySelector('.category--selected');
     active.classList.remove('category--selected');
-    event.target.classList.add('category--selected');
+    target.classList.add('category--selected');
+}
 
-    // 프로젝트 필터링
+function filterProjects(filter) {
     projectsContainer.classList.add('anim-out');
     projects.forEach(project => {
         console.log(project.dataset.type);
@@ -24,7 +30,7 @@ categories.addEventListener('click', (event) => {
             project.style.display = 'none';
         }
     });
-    setTimeout(()=>{
+    setTimeout(() => {
         projectsContainer.classList.remove('anim-out');
     }, 250)
-});
+}
