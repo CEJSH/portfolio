@@ -22,8 +22,18 @@ function observerCallback(entries) {
     entries.forEach(entry => {
         const index = sectionIds.indexOf(`#${entry.target.id}`);
         visibleSections[index]= entry.isIntersecting;
-        selectLastOne = index ===sectionIds.length - 1 &&
+        selectLastOne =
+        index === sectionIds.length - 1 &&
         entry.isIntersecting &&
-        entry.IntersectionRatio > 0.99;
+        entry.intersectionRatio > 0.99;
     });
+    console.log(selectLastOne);
+
+    const navIndex = selectLastOne ? sectionIds. length - 1 : findFirstIntersecting(visibleSections);
+    console.log(sectionIds[navIndex]);
+}
+
+function findFirstIntersecting(intersections) {
+    const index = intersections.indexOf(true);
+    return index >= 0 ? index : 0;
 }
