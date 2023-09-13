@@ -22,6 +22,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
@@ -87,7 +91,7 @@ button {
   justify-content: space-between;
   align-items: center;
   z-index: 1;
-  transition : all 300ms ease;
+  transition: all 300ms ease;
 }
 
 .header--dark {
@@ -111,11 +115,11 @@ button {
 }
 
 .header__toggle {
-  display:none;
-  color:var(--color-white);
+  display: none;
+  color: var(--color-white);
   font-size: 1.5rem;
   position: absolute;
-  top:1.3rem;
+  top: 1.3rem;
   right: 1rem;
 }
 .header__menu {
@@ -124,10 +128,9 @@ button {
 }
 
 .header__menu__item {
-  display:block;
+  display: block;
   padding: 8px 16px;
   border-bottom: 1px solid transparent;
-  
 }
 
 .header__menu__item:hover {
@@ -147,7 +150,6 @@ button {
   padding-top: 7rem;
   text-align: center;
 }
-
 
 .home__avatar {
   width: 250px;
@@ -196,7 +198,7 @@ button {
 }
 
 .major {
-  width:30%;
+  width: 30%;
   background-color: var(--color-primary-variant);
   padding: 2rem 1rem;
   color: var(--color-text);
@@ -482,9 +484,9 @@ button {
   color: var(--color-accent);
 }
 
-.fa-solid{
- color:white;
- opacity:1;
+.fa-solid {
+  color: white;
+  opacity: 1;
 }
 
 @media screen and (max-width: 768px) {
@@ -499,14 +501,14 @@ button {
     font-size: 1rem;
   }
 
-  .header{
+  .header {
     flex-direction: column;
     align-items: start;
     background-color: var(--color-primary);
   }
 
   .header__menu {
-    display:none;
+    display: none;
     flex-direction: column;
     text-align: center;
     margin: 1rem 4rem;
@@ -518,11 +520,11 @@ button {
   }
 
   .header__nav {
-    width:100%;
+    width: 100%;
   }
 
-  .header__toggle{
-    display:block;
+  .header__toggle {
+    display: block;
   }
 
   #home {
@@ -546,17 +548,16 @@ button {
 
   .skills {
     grid-template-columns: 1fr;
-
   }
 
   .categories {
     flex-direction: column;
   }
   .category {
-    width:100%
+    width: 100%;
   }
 
-  .projects{
+  .projects {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -565,8 +566,8 @@ button {
   }
 
   .testimonial:nth-child(even) .testimonial__img {
-      order: 0;
-    }
+    order: 0;
+  }
 
   .arrow-up {
     font-size: 2rem;
@@ -574,11 +575,11 @@ button {
     height: 3rem;
     bottom: 1.5rem;
     right: 1.5rem;
-      transition: opacity 300ms ease-in;
+    transition: opacity 300ms ease-in;
   }
 
-    .fa-solid {
-      color: white;
-      opacity: 1;
-    }
+  .fa-solid {
+    color: white;
+    opacity: 1;
+  }
 }
